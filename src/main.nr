@@ -51,3 +51,28 @@ fn main(
     // Cannot have unused variables, return the recipient as public output of the circuit
     recipient
 }
+
+#[test]
+fn test_main() {
+    let recipient: Field = 0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8;
+    let priv_key: Field = 0x000000000000000000000000000000000000000000000000000000616c696365;
+    let note_root: Field = 0x154d6fd651e2292910ef1d6926ea46add7c87afef312975065ad1c3cebbd21ec;
+    let index: Field = 0;
+    let note_hash_path: [Field; 3] = [
+        0x18d85f3de6dcd78b6ffbf5d8374433a5528d8e3bf2100df0b7bb43a4c59ebd63,
+        0x1b7ba1a4ebccefab74ac08030f380fbeb0a005c73c75069e4d08fbb67d4984b9,
+        0x0f40f15ccd167735cd35e2ee6390231f40433cf748434e7a0e8b26a95d96bf2d
+    ];
+    let secret: Field = 0x1929ea3ab8d9106a899386883d9428f8256cfedb3c4f6b66bf4aa4d28a79988f;
+    let nullifierHash: Field = 0x22074c34b69bb85c360e2e8cc02a7a223388ba735aa1cf0bf8d0163b960e5876;
+
+    main(
+        recipient,
+        priv_key,
+        note_root,
+        index,
+        note_hash_path,
+        secret,
+        nullifierHash
+    );
+}
