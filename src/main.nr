@@ -56,7 +56,7 @@ fn main(
 fn test_main() {
     let recipient: Field = 0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8;
     let priv_key: Field = 0x000000000000000000000000000000000000000000000000000000616c696365;
-    let note_root: Field = 0x154d6fd651e2292910ef1d6926ea46add7c87afef312975065ad1c3cebbd21ec;
+    let note_root: Field = 0x0f72910fa39249cc44881a98f91cde964f1ae2694dd627973b9578984f0f7a94;
     let index: Field = 0;
     let note_hash_path: [Field; 3] = [
         0x18d85f3de6dcd78b6ffbf5d8374433a5528d8e3bf2100df0b7bb43a4c59ebd63,
