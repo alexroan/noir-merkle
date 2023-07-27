@@ -7,5 +7,6 @@ libs = ["lib"]
 remappings = [
     "verifier/=circuits/contract/",
 ]
+fs_permissions = [{ access = "read", path = "./circuits/proofs/"}]
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
