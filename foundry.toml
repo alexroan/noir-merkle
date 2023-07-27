@@ -1,0 +1,11 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+
+# Add the zk verifier contracts from Noir
+remappings = [
+    "verifier/=circuits/contract/",
+]
+
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config
